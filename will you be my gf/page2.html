@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Message</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(to right, #f9c6c9, #f9d1d1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            position: relative;
+        }
+
+        .message-container {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.5);
+            max-width: 80%;
+        }
+
+        .love-emoji {
+            position: absolute;
+            font-size: 2rem;
+            animation: float 10s ease-in-out infinite, bounce 2s infinite;
+        }
+
+        .love-emoji.large {
+            font-size: 3rem;
+            animation-duration: 15s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(100px, -100px);
+            }
+            50% {
+                transform: translate(-100px, -100px);
+            }
+            75% {
+                transform: translate(-100px, 100px);
+            }
+            100% {
+                transform: translate(100px, 100px);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-50px);
+            }
+        }
+
+        .next-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #ff4d4d;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .next-button:hover {
+            background-color: #ff1a1a;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <p>So it's been more than 2 months we know each other, dan aku bener bener mau serius sama kamu. I'm still crushing on you like it's the very first day I met you. You've brought so much joy and warmth into my life. You are the best thing that ever happened in my life and I'm always grateful for it.</p>
+        <a href="page3.html" class="next-button">Next</a>
+    </div>
+
+    <div class="love-emoji" style="animation-delay: 1s;">❤️</div>
+    <div class="love-emoji large" style="animation-delay: 3s;">❤️</div>
+    <div class="love-emoji" style="animation-delay: 5s;">❤️</div>
+    <div class="love-emoji large" style="animation-delay: 7s;">❤️</div>
+    <div class="love-emoji" style="animation-delay: 9s;">❤️</div>
+    <div class="love-emoji large" style="animation-delay: 11s;">❤️</div>
+</body>
+</html>
+
